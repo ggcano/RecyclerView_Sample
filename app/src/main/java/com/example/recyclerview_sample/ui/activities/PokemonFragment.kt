@@ -38,9 +38,7 @@ class PokemonFragment : Fragment() {
         setUpRecyclerView()
         initViewModel()
         return view
-
     }
-
     fun initViewModel () {
         viewModel =
             ViewModelProviders.of(this).get(PokemonViewModel::class.java)
@@ -53,5 +51,4 @@ class PokemonFragment : Fragment() {
         mRecyclerView.layoutManager = LinearLayoutManager(context)
         mRecyclerView.adapter = mAdapter
     }
-
 }

@@ -69,7 +69,6 @@ class SuperHeroFragment : Fragment(){
             R.id.marvel_id ->
                 mRecyclerView.layoutManager = LinearLayoutManager(context)
         }
-
         return super.onOptionsItemSelected(item)
     }
 
@@ -78,6 +77,4 @@ class SuperHeroFragment : Fragment(){
         mRecyclerView.layoutManager = LinearLayoutManager(context)
         mRecyclerView.adapter = mAdapter
     }
-
-
 }
